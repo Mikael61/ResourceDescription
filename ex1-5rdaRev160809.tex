@@ -1,0 +1,567 @@
+\documentclass[a4,12pt]{article}
+\usepackage[cp1252]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[swedish]{babel}
+%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\usepackage{pstricks}
+\usepackage{pst-node}
+\raggedbottom
+% \usepackage{pst-eps}
+\usepackage{graphics} 
+\usepackage{color} 
+%\usepackage{setspace}
+%\setstretch{1.3}
+\parindent=5mm 
+\parskip=0mm
+\usepackage[textwidth=127mm,textheight=200mm]{geometry}
+%\usepackage{semcolor}
+%\usepackage{alltt}
+%\usepackage{moreverb}
+%\usepackage{parsetree}
+%\usepackage{fancyhdr}
+\setlength{\unitlength}{1mm}
+%\slideframe{none}
+%\slidesmag{2}
+%\renewcommand{\slideleftmargin}{5mm}
+%\renewcommand{\sliderightmargin}{5mm}
+%\paperwidth=240mm
+%\slidewidth=200mm
+%\slideheight=210mm
+\begin{document}
+\pagestyle{empty}
+
+\Huge
+\begin{center}
+  Lösningsförslag \\ 
+
+
+\rule{100mm}{.5mm}
+
+\end{center}
+\normalsize
+
+
+
+\section{Exempel 1}
+\label{sec:ex1}
+
+
+
+
+\vspace{3mm}
+
+\textbf{Attribut till manifestationen}
+
+\noindent $m_{1.1.1}$
+
+ \texttt{Identifikator (ISBN)} 8203161960 ;
+
+ \texttt{Huvudtitel} Felttoget ;
+
+\texttt{Övrig titelinformation} general Otto Ruges erindringer fra kampene april-juni
+1940 ; 
+
+\texttt{Upphovsuppgift} redigert og med innledning av Olav Riste ;
+
+\texttt{Upplagebeteckning} 2. opplag ;
+
+ \texttt{Utgivningsort} [Oslo ?] ;
+
+ \texttt{Utgivarnamn} H. Aschehoug \& Co. ;
+
+ \texttt{Utgivningstid} 1989 ;
+ 
+  \texttt{Mediatyp}  omedierad;
+ 
+ \texttt{Bärartyp}  volym;
+
+\texttt{Bäraromfång} 215 sidor ;
+
+\texttt{Övriga fysiska detaljer} illustrationer .
+
+
+
+\vspace{3mm}
+
+\textbf{Attribut för personerna}
+
+\noindent ${p_11}$
+
+   \texttt{Föredraget namn för person} Ruge, Otto ;
+
+   \texttt{Levnadstid} 1882-1961 .
+
+\noindent ${p_12}$
+
+   \texttt{Föredraget namn för person} Riste, Olav ;
+
+   \texttt{Levnadstid} 1933- .
+\vspace{3mm}
+
+
+\textbf{Relationer}
+
+\noindent $m_{1.1.1}$
+
+\texttt{Huvudupphov} $p_11$ ;
+
+\texttt{Medupphov} [\texttt{id} $p_{12}$ ; \texttt{roll} oth ] .
+
+\vspace{3mm}
+
+\small 
+
+\noindent \texttt{700} [\texttt{a} $p_{2}$ ; \texttt{4} oth ] kan
+tyckas konstigt, och är lite grann av en ad-hoc-lösning. Relationen
+700 uttrycker ansvar för innehållet, \texttt{a} definierar den entitet
+som relateras till manifestationen, medan \texttt{4} kvalifierar
+(preciserar) relationens karaktär. Här används koden 'oth' för
+``medarbetare (ospecificerad)'', en slags slaskkod alltså. 'oth'
+tillhör alltså relationen mellan två entiteter och inte någon av
+entiteterna. Man kan säga att det är ett attribut för en relation,
+även om det sättet att se på saken inte uttrycks i RDA. Observera att
+RDA egentligen förespråkar att 'oth' skall uttryckas i klartext, men
+att vi här gör bruk av de treställiga koderna som listas på 
+\begin{footnotesize}
+  http://www.kb.se/dokument/Verktygsladan/funktionskoder\_full\_funktion.pdf
+\end{footnotesize}
+med svenska benämningar.
+
+\normalsize
+
+\newpage
+
+\section{Exempel 2}
+\label{sec:ex2}
+
+
+
+\textbf{Attribut för manifestationen}
+
+\noindent $m_{2.1.1}$
+
+ \texttt{Identifikator (ISBN)} 0817636366 (USA) ;
+
+ \texttt{Identifikator (ISBN)} 3764336366 (Schweiz) ;
+
+ \texttt{Huvudtitel} Discrete thoughts ;
+ 
+\texttt{Övrig titelinformation} essays on mathematics, science and
+philosophy ;
+
+\texttt{Upphovsuppgift} Mark Kac, Gian-Carlo Rota, and Jacob T. Schwartz  ;
+
+\texttt{Upplagebeteckning} Revised and corrected edition ;
+
+\texttt{Upplagespecifik upphovsuppgift} with the assistance of Peter Renz ;
+
+ \texttt{Utgivningsort} Boston ;
+
+ \texttt{Utgivningsort} Basel ;
+
+ \texttt{Utgivarnamn} Birkhäuser ;
+
+ \texttt{Utgivningstid} [1992] ;
+ 
+  \texttt{Mediatyp}  omedierad;
+ 
+ \texttt{Bärartyp}  volym;
+
+\texttt{Bäraromfång} xii, 264 sidor ;
+
+\texttt{Övriga fysiska detaljer} illustrationer .
+
+\vspace{3mm}
+För att skilja de båda identiska utgåvorna åt (som alltså behandlas
+som en manifestation) anges inom parentes till vilken utgåva
+respektive ISBN-nr hör. ''If the resource bears more than one
+identifier of the same type, record a brief qualification after the
+identifier.'' (RDA 2.15.17)
+
+''A statement of responsibility relating to the edition is a statement
+relating to the identification of any persons, families, or corporate
+bodies responsible for the edition being described but not to all
+editions.'' (RDA 2.5.4.1) Skriv av exakt som det anges och notera att
+upphovsuppgifter relaterade till utgåvor noteras med \texttt{Upplagespecifik upphovsuppgift 250b}.
+
+\vspace{3mm}
+
+\textbf{Attribut för personerna}
+
+\noindent $p_21$ 
+
+\texttt{Föredraget namn för person} Kac, Mark ; 
+
+\texttt{Levnadstid} 1914-1984 .
+
+\noindent $p_22$
+
+\texttt{Föredraget namn för person} Rota, Gian-Carlo ; 
+
+\texttt{Levnadstid} 1932-1999 .
+ 
+
+
+\noindent $p_23$
+
+\texttt{Föredraget namn för person} Schwartz, Jacob T. ; 
+
+\texttt{Levnadstid} 1930-2009 .
+ 
+
+
+\noindent $p_24$ 
+
+\texttt{Föredraget namn för person} Renz, Peter ;
+
+\texttt{Levnadstid} 1946- .
+
+
+
+
+
+
+\vspace{3mm}
+
+\textbf{Relationer}
+
+\noindent $m_{2.1.1}$
+
+\texttt{Medupphov} [ \texttt{id} $p_21$ ; \texttt{roll} aut ] ;
+
+\texttt{Medupphov} [ \texttt{id} $p_22$ ; \texttt{roll} aut ] ;
+
+\texttt{Medupphov} [ \texttt{id} $p_23$ ; \texttt{roll} aut ] ;
+
+\texttt{Medupphov} [ \texttt{id} $p_24$ ; \texttt{roll} edt ] .
+
+
+
+\vspace{3mm}
+
+
+\noindent Om det inte via LIBRIS är möjligt att fastställa attribut för personer
+så behöver du inte gå längre än så.
+
+
+
+
+\newpage
+
+
+\section{Exempel 3}
+\label{sec:ex3}
+
+
+
+\textbf{Attribut för manifestationen}
+
+\noindent $m_{3.1.1}$
+
+ \texttt{Identifikator (ISBN)} 9129480973 ;
+
+ \texttt{Huvudtitel} Att förstå när barnen talar ;
+ 
+\texttt{Övrig titelinformation} exempel och analys ;
+
+\texttt{Upphovsuppgift} Nancy Martin, Paul Williams, Joan Wilding, Susan Hemmings och Peter Medway ; med förord av Lars Jalmert ;
+översättning av Synnöve Olsson ;
+
+ \texttt{Utgivningsort} [Stockholm] ;
+
+ \texttt{Utgivarnamn} Rabén \& Sjögren ;
+
+ \texttt{Utgivningstid} 1977 ;
+ 
+  \texttt{Mediatyp}  omedierad;
+ 
+ \texttt{Bärartyp}  volym;
+
+\texttt{Bäraromfång} 212 sidor ;
+
+\texttt{Series huvudtitel} Tema nova ;
+
+\texttt{Allmänna anmärkningar} Originalets titel: Understanding children talking .
+
+\vspace{3mm}
+Den här typen av kommentater som originaltiteln utgör kan noteras med
+Allmänna anmärkningar (500a), men är inte obligatoriskt. Särskilt eftersom en relation till
+uttrycket också skall anges. 
+\vspace{3mm}
+
+\textbf{Attribut för relaterade verk/uttryck/manifestationer}
+
+\noindent $m_{3.2.1}$
+
+  \texttt{Huvudtitel} Understanding children talking .
+
+\noindent $m_{30.1.1}$
+
+  \texttt{Huvudtitel} Tema nova .
+
+
+
+\vspace{3mm}
+
+\textbf{Attribut för personerna}
+
+\noindent $p_{31}$
+
+  \texttt{Föredraget namn för person} Martin, Nancy .
+
+\noindent $p_{32}$
+
+  \texttt{Föredraget namn för person} Medway, Peter .
+
+\noindent $p_{33}$
+
+  \texttt{Föredraget namn för person} Williams, Paul .
+
+\noindent $p_{34}$
+
+  \texttt{Föredraget namn för person} Wilding, Joan .
+
+\noindent $p_{35}$
+
+  \texttt{Föredraget namn för person} Hemmings, Susan .
+  
+  \noindent $p_{36}$
+
+  \texttt{Föredraget namn för person} Olsson, Synnöve .
+
+
+
+\vspace{3mm}
+
+\textbf{Relationer}
+
+\noindent $m_{3.1.1}$
+
+\texttt{Huvudupphov} [ \texttt{id}  $p_{31}$ ; \texttt{roll}  aut ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{32}$ ; \texttt{roll}  aut ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{33}$ ; \texttt{roll}  aut ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{34}$ ; \texttt{roll}  aut ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{35}$ ; \texttt{roll}  aut ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{36}$ ; \texttt{roll}  trl ] ;
+
+\texttt{Serie}  $m_{30.1.1}$ ;
+
+\texttt{Uniform titel} $m_{3.2.1}$ .
+
+\vspace{3mm}
+
+\noindent 
+
+Förordsförfattaren betraktas som medupphov när förordet är omfattande (25%) enligt nuvarande praxis.
+
+
+
+
+
+
+\newpage
+
+\section{Exempel 4}
+\label{sec:ex4}
+
+
+\textbf{Attribut för manifestationen}
+
+\noindent $m_{4.1.1}$
+
+ \texttt{Identifikator (ISBN)} 0949060887 ;
+
+ \texttt{Huvudtitel} Information literacy around the world ;
+ 
+\texttt{Övrig titelinformation} advances in
+programs and research ;
+
+\texttt{Upphovsuppgift} edited by Christine Bruce and Philip
+Candy ; editorial assistance Helmut Klaus ;
+
+ \texttt{Utgivningsort} Wagga Wagga, New South Wales ;
+
+ \texttt{Utgivarnamn} Centre for Information Studies ;
+
+ \texttt{Utgivningstid} 2000 ;
+ 
+  \texttt{Mediatyp}  omedierad;
+ 
+ \texttt{Bärartyp}  volym;
+
+\texttt{Bäraromfång} xvi, 304 sidor ;
+
+\texttt{Serie} [ \texttt{huvudtitel} Occasional publications / Centre for Information Studies,
+Charles Sturt University ; \texttt{volym} 1 ] .
+
+\vspace{3mm}
+
+RDA 2.12.6.3 har ''Record statements of responsibility associated with
+the series title only if they are considered to be necessary for
+identification of the series.'' och det måste anses att serietiteln i
+sig inte är särskilt signifikant och sannolikt kan sammanblandas med
+annan serie, varför upphovet blir viktigt. Notera ISBD-interpunktionen
+'/' som skiljer titeln från upphovsuppgiften. 
+
+
+\vspace{3mm}
+
+
+
+\textbf{Attribut för relaterad manifestation}
+
+\noindent $m_{5.1.1}$
+
+  \texttt{Huvudtitel} Occasional publications ;
+
+  \texttt{Upphovsuppgift} Centre for Information Studies,
+Charles Sturt University ;
+
+\texttt{Identifikator (ISSN)} 1443-4334 .
+
+
+
+
+\vspace{3mm}
+
+\textbf{Attribut för personerna}
+
+\noindent $p_{41}$
+  \texttt{Föredraget namn för person} Bruce, Christine .
+
+\noindent $p_{42}$
+  \texttt{Föredraget namn för person} Klaus, Helmut .
+
+\noindent $p_{43}$
+  \texttt{Föredraget namn för person} Candy, Philip .
+
+
+\vspace{3mm}
+
+\textbf{Relationer}
+
+\noindent $m_{4.1.1}$
+
+\texttt{Medupphov} [ \texttt{id}  $p_{41}$ ; \texttt{roll}  edt ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{42}$ ; \texttt{roll}  oth ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{43}$ ; \texttt{roll}  edt ] ;
+
+\texttt{Serie}  $m_{5.1.1}$ .
+
+
+
+
+
+\newpage
+
+\section{Exempel 5}
+\label{sec:ex5}
+
+
+\textbf{Attribut för manifestationen}
+
+\noindent $m_{6.1.1}$
+
+ \texttt{Identifikator (ISBN)} 9189140443 ;
+
+ \texttt{Identifikator (ISBN)} 9789189140448 ;
+
+ \texttt{Huvudtitel} Bortom etnicitet ;
+ 
+\texttt{Övrig titelinformation} festskrift till Aleksandra Ålund ;
+
+\texttt{Upphovsuppgift} Diana
+Mulinari \& Nora Räthzel, red. ; författare: Ursula Apitzsch [och tjugo andra] ;
+
+
+\texttt{Upplagebeteckning} Första upplagan ;
+
+ \texttt{Utgivningsort} Umeå ;
+
+ \texttt{Utgivarnamn} Boréa ;
+
+ \texttt{Utgivningstid} 2006 ;
+ 
+  \texttt{Mediatyp}  omedierad;
+ 
+ \texttt{Bärartyp}  volym;
+
+\texttt{Bäraromfång} 250 sidor .
+
+\vspace{3mm}
+
+
+\textbf{Attribut för personerna}
+
+\noindent $p_{51}$
+ 
+ \texttt{Föredraget namn för person} Ålund, Aleksandra ;
+
+  \texttt{Levnadstid} 1945- .
+
+\noindent $p_{52}$
+
+  \texttt{Föredraget namn för person} Mulinari, Diana ;
+
+  \texttt{Levnadstid} 1954- .
+
+\noindent $p_{53}$
+
+  \texttt{Föredraget namn för person} Räthzel, Nora .
+
+\noindent $p_{54}$
+
+  \texttt{Föredraget namn för person} Apitzsch, Ursula .
+
+  RDA 2.4.1.5 har en möjlighet till arbetsbesparing som det är upp
+  till varje instans att ta ställning till om den skall tillämpa ''If
+  a single statement of responsibility names more than three persons,
+  families, or corporate bodies performing the same function, or with
+  the same degree of responsibility, omit all but the first of each
+  group of such persons, families, or bodies. Indicate the omission by
+  summarizing what has been omitted in the language and script
+  preferred by the agency preparing the description. Indicate that the
+  summary was taken from a source outside the resource itself as
+  instructed under 2.2.4''
+
+  Här handlar det om 20 personer, varför vi nog kan säga att
+  undantaget sannolikt kan komma att tillämpas, och vi anger endast
+  den först nämnda. Enligt nuvarande praxis skulle fält 100 saknas,
+  och vi gör så i det här fallet, eftersom digniteten hos vars och ens
+  bidrag är svår att avgöra. I strikt mening är det betydelselöst om
+  vi har med 100 eller inte, som understrukits på annan plats
+  här. Föremålet för festskriften är också associerad med
+  manifestationen/verket och skall redovisas.
+
+\vspace{3mm}
+
+\textbf{Relationer}
+
+\noindent $m_{6.1.1}$
+
+\texttt{Medupphov} [ \texttt{id}  $p_{51}$ ; \texttt{roll}  hnr ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{52}$ ; \texttt{roll}  edt ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{53}$ ; \texttt{roll}  edt ] ;
+
+\texttt{Medupphov} [ \texttt{id}  $p_{54}$ ; \texttt{roll}  aut ] .
+
+
+
+
+
+
+
+\end{document}
+
+
