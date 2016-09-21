@@ -14,6 +14,7 @@ except SyntaxError:
 List = []
 # create an empty list to append with all creator values of the RDF file
 authors = []
+# create a graph for creator URIs
 a = Graph()
 for (s,p,o) in g:
     List.append(s)
