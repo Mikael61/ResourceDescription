@@ -1,0 +1,34 @@
+<http://libris.kb.se/resource/bib/1348134> <http://purl.org/dc/elements/1.1/creator> <http://libris.kb.se/resource/auth/236782>.
+<http://libris.kb.se/resource/bib/1348134> <http://purl.org/dc/elements/1.1/title> "Leksaksballonger".
+<http://libris.kb.se/resource/bib/1348134> <http://purl.org/dc/elements/1.1/date> "1931".
+<http://libris.kb.se/resource/bib/1348134> <http://purl.org/dc/elements/1.1/language> "swe" .
+<http://libris.kb.se/resource/bib/1348134> <http://purl.org/dc/elements/1.1/publisher> "Geber" .
+<http://libris.kb.se/resource/bib/1348134> <http://RDVocab.info/Elements/rda:placeOfPublication> "Stockholm" .
+	
+<http://libris.kb.se/resource/bib/435320> <http://purl.org/dc/elements/1.1/title> "Främlingen" .
+<http://libris.kb.se/resource/bib/435320> <http://purl.org/dc/elements/1.1/creator> <http://libris.kb.se/resource/auth/44544> .
+<http://libris.kb.se/resource/bib/435320> <http://purl.org/dc/elements/1.1/date> "1931".
+<http://libris.kb.se/resource/bib/435320> <http://purl.org/dc/elements/1.1/publisher> "Aldus/Bonnier" .
+<http://libris.kb.se/resource/bib/435320> <http://purl.org/dc/elements/1.1/language> "swe" .
+<http://libris.kb.se/resource/bib/435320> <http://RDVocab.info/Elements/rda:placeOfPublication> "Stockholm" .
+
+<http://libris.kb.se/resource/bib/1338845> <http://purl.org/dc/elements/1.1/title> "De besegrade: dikter" .
+<http://libris.kb.se/resource/bib/1338845> <http://purl.org/dc/elements/1.1/creator> "Sigfrid Lindstrom" .
+<http://libris.kb.se/resource/bib/1338845> <http://purl.org/dc/elements/1.1/creator> <http://libris.kb.se/resource/auth/236782> .
+<http://libris.kb.se/resource/bib/1338845> <http://purl.org/dc/elements/1.1/date> "1927" .
+<http://libris.kb.se/resource/bib/1338845> <http://purl.org/dc/elements/1.1/publisher> "Geber" .
+<http://libris.kb.se/resource/bib/1338845> <http://purl.org/dc/elements/1.1/language> "swe" .
+<http://libris.kb.se/resource/bib/1338845> <http://RDVocab.info/Elements/rda:placeOfPublication> "Stockholm" .
+
+<http://libris.kb.se/resource/bib/513879> <http://purl.org/dc/elements/1.1/publisher> "Aldus/Bonnier" .
+<http://libris.kb.se/resource/bib/513879> <http://purl.org/dc/elements/1.1/title> "Främlingen" .
+<http://libris.kb.se/resource/bib/513879> <http://purl.org/dc/elements/1.1/creator> "Albert Camus" .
+<http://libris.kb.se/resource/bib/513879> <http://purl.org/dc/elements/1.1/creator> <http://libris.kb.se/resource/auth/44544> .
+<http://libris.kb.se/resource/bib/513879> <http://purl.org/dc/elements/1.1/date> "1964" .
+<http://libris.kb.se/resource/bib/513879> <http://purl.org/dc/elements/1.1/language> "swe" .
+<http://libris.kb.se/resource/bib/513879> <http://RDVocab.info/Elements/rda:placeOfPublication> "Stockholm" .
+
+<http://libris.kb.se/resource/bib/1405446> <http://purl.org/dc/elements/1.1/title> "Vindsröjning" .
+<http://libris.kb.se/resource/bib/1405446> <http://purl.org/dc/elements/1.1/date> "1939" .
+<http://libris.kb.se/resource/bib/1405446> <http://purl.org/dc/elements/1.1/publisher> "Geber" .
+<http://libris.kb.se/resource/bib/1405446> <http://purl.org/dc/elements/1.1/creator> <http://libris.kb.se/resource/auth/236782> .
