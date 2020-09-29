@@ -1,0 +1,11 @@
+import csv
+with open('descriptionsClean.csv', mode='r') as csv_file:
+    csv_reader = csv.DictReader(csv_file, delimiter=";")
+    for row in csv_reader:
+        for key,value in row.items():
+            if key == 'creator' and 'Lindström' in value:
+                for key,val in row.items():
+                    if key == 'title':
+                        print(val,end='')
+                    if key == 'date' :
+                        print(' ('+val+')')
